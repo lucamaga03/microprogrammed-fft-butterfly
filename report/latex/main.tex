@@ -1,0 +1,65 @@
+% CREDITS:
+% Comprehensive exam template for ECE Ph.D. students at Queen's University. by Jefferson Silveira
+\documentclass[a4paper,10pt]{article}
+\usepackage[left=25mm,top=25mm,right=25mm,bottom=25mm]{geometry}
+\usepackage{etoolbox} %required for cover page
+\usepackage{booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage[capitalise]{cleveref}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{comment}
+\usepackage{multirow}
+
+\usepackage[italian]{babel}
+% "text" in the source is printed with the right opening and closing quotes
+\usepackage[autostyle=false, style=english]{csquotes}
+\MakeOuterQuote{"}
+\frenchspacing % same space after a full stop as between words (Italian style)
+
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\linespread{1.1}
+
+\graphicspath{{figures/}}
+
+% ------------------- important:
+
+\begin{document}
+
+\pagenumbering{gobble} % remove page numbers (and reset to 1)
+
+\input{front}
+\tableofcontents
+\newpage
+
+\pagenumbering{arabic} % Arabic page numbers (and reset to 1)
+
+% Sections
+\input{sections/01_introduzione}
+\input{sections/02_data_flow_diagram}
+\input{sections/03_tempo_di_vita}
+\input{sections/04_datapath}
+\input{sections/05_macchina_a_stati}
+\input{sections/06_cu_microprogrammata}
+\input{sections/07_fft_e_simulazione}
+\input{sections/08_sviluppi_futuri}
+\input{sections/09_conclusioni}
+
+\end{document}

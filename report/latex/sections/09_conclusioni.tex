@@ -1,0 +1,3 @@
+\section{Conclusioni}
+Alla luce dei test svolti e delle spiegazioni fornite possiamo sostenere di aver centrato il goal prefissato dato il throughput raggiunto in continua e la precisione ottenuta.
+Riassumendo il lavoro svolto: abbiamo progettato un elaboratore che risolve la fft su 16 campioni attraverso l’uso di 32 (8x4) Butterfly, componente microprogrammato che implementa la tecnica dei Late Status, ottenendo una latenza di 45 colpi di clock tra il momento in cui si ha uno start in corrispondenza di un rising edge del clk e l’output delle parti immaginarie e un throughput pari a una solve ogni 6 colpi di clock in modalità continua.

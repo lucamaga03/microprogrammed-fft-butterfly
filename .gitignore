@@ -24,3 +24,9 @@ ENTI/
 PACK
 
 work/
+
+# LaTeX build files made by VS Code (LaTeX Workshop)
+%AUXDIR%/
+
+# draw.io sources of the figures: kept locally, not published
+drawio_sources/
